@@ -1,12 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dongle Zone</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="games.html">Games</a>
+            <a href="campeonatos.html">Campeonatos</a>
+            <a href="reservas.html">Reservas</a>
+        </nav>
+
+        <h1>Dongle Zone</h1>
+    </header>
+
+    <main>
+        <h2>reserve sua experiência</h2>
+        <p>Preencha os dados abaixo e garanta seu horário na DongleZone!</p>
+
+        <section>
+            <form>
+                <div>
+                    <div>
+                        <div>
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" placeholder="Digite seu nome completo" maxlength="50"
+                                pattern="[A-Za-zÀ-ÿ]+" required>
+
+                            <label for="tel">Telefone</label>
+                            <input type="tel" id="tel" placeholder="(00)9 0000-0000" inputmode="numeric"
+                                pattern="[0-9]+" max="11" required>
+
+                            <label for="date">Data</label>
+                            <input type="date" id="date" required>
+
+                            <label for="number">Número de pessoas</label>
+                            <input type="number" id="number" min="1" max="4" placeholder="Selecione" required>
+                        </div>
+
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" maxlength="50" placeholder="Digite seu e-mail" required>
+
+                            <label for="experiencias">Escolha uma experiência</label>
+                            <select id="experiencias">
+                                <option value="pc">PC Gamer</option>
+                                <option value="xbox">XBox Series X</option>
+                                <option value="playstation">PlayStation 5</option>
+                                <option value="simulador">Simulador</option>
+                                <option value="vr">Realidade Virtual</option>
+                            </select>
+
+                            <label for="horario">Horário</label>
+                            <input type="time" id="horario" min="08:00" max="22:00" required>
+
+                            <label for="observacao">Observação (Opcional)</label>
+                            <textarea id="observacao" placeholder="Alguma observação?"></textarea>
+                        </div>
+
+                        <button>reservar agora ></button>
+                    </div>
+
+                    <div>
+                        <h3>após reservar</h3>
+                        <ul>
+                            <li>Chegue com 10 minutos de antecedência.</li>
+                            <li>Respeite o horário da sua reserva.</li>
+                            <li>Cancelamentos em até 2 horas de antecedência.</li>
+                            <li>Menores de idade devem estar acompanhados de um resposável.</li>
+                            <li>Siga as orientações da nossa equipe.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>vai com amigos?</h3>
+                        <p>Temos pacotes especiais para grupos e eventos. Entre em contato!</p>
+
+                        <a href="https://wa.me/5547992587577" target="_blank" rel="noopener noreferrer">Falar com a
+                            equipe</a>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h1>DongleZone</h1>
+        <p>Viva o jogo. Sinta a experiência.</p>
+
+        <p>
+            <a href="mailto:contato@vemserdongle.com.br">Email: contato@vemserdongle.com.br</a>
+        </p>
+
+        <p>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Visite nosso Instagram</a>
+        </p>
+
+        <p>2026 Dongle Zone - Blumenau, SC
+    </footer>
 </body>
+
 </html>
