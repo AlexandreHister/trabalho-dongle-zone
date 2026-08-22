@@ -1,3 +1,25 @@
+:root {
+    --color-background: #05040b;
+    --color-surface: #0c0915;
+    --color-text: #f8f7fb;
+    --color-muted: #b9b4c4;
+    --color-purple: #7a19ed;
+    --color-purple-light: #a72dff;
+    --color-border: rgba(177, 92, 255, 0.2);
+    --header-height: 72px;
+    --container-width: 1180px;
+    --border-radius: 12px;
+    --transition: 180ms ease;
+}
+
 * {
     box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: var(--color-text);
+    background: var(--color-background);
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    line-height: 1.5;
 }
